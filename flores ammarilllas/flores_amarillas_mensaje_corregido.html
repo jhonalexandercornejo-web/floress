@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Flores amarillas para ti 💛</title>
+<style>
+*{box-sizing:border-box}html,body{margin:0;width:100%;min-height:100%;overflow-x:hidden}body{font-family:Arial,sans-serif;color:#fff;background:radial-gradient(ellipse at bottom,#163b38,#07121d 75%)}.contenedor{position:relative;z-index:1;max-width:600px;min-height:100dvh;margin:auto;padding:30px 16px 45px;display:flex;flex-direction:column;align-items:center;text-align:center}h1{font-size:clamp(25px,6vw,38px);line-height:1.25;color:#ffdf55;margin:10px 0 0;text-shadow:0 0 18px #ffca2860}.subtitulo{font-size:clamp(14px,3.5vw,17px);color:#ffe9a5;line-height:1.5;margin:14px 0 0}.jardin{width:min(100%,390px);margin:12px auto 4px;flex-shrink:0}.jardin svg{width:100%;height:auto;display:block;overflow:visible}.cabeza{transform-box:fill-box;transform-origin:center;animation:mecer 4s ease-in-out infinite alternate}.cabeza:nth-of-type(even){animation-delay:-2s}@keyframes mecer{from{transform:rotate(-3deg)}to{transform:rotate(3deg)}}button{width:min(100%,310px);border:0;border-radius:28px;background:linear-gradient(135deg,#ffeb3b,#ffb300);color:#3c2700;padding:15px 20px;margin:9px 0 0;font-size:16px;font-weight:700;cursor:pointer;box-shadow:0 0 18px #ffc40055}button:active{transform:scale(.98)}.mensaje{display:none;width:100%;margin-top:22px;padding:22px 18px;background:#ffffff12;border:1px solid #ffdf5577;border-radius:18px;font-size:16px;line-height:1.8}.mensaje.visible{display:block}.mensaje h2{color:#ffdf55;font-size:22px;margin:0 0 10px}.mensaje p{margin:0}.estrella{position:fixed;width:3px;height:3px;border-radius:50%;background:#fff;pointer-events:none;animation:brillar 2s infinite alternate}.corazon{position:fixed;bottom:-30px;z-index:10;pointer-events:none;animation:subir 6s linear forwards}@keyframes brillar{from{opacity:.2}to{opacity:1}}@keyframes subir{to{transform:translateY(-110vh);opacity:0}}@media(max-width:480px){.contenedor{padding:23px 13px 35px}.jardin{width:min(100%,330px);margin:8px auto 8px}button{font-size:15px;padding:14px}.mensaje{font-size:15px}}@media(prefers-reduced-motion:reduce){.cabeza,.estrella{animation:none}}
+.sorpresa{width:100%;max-width:400px;margin-top:9px}.sorpresa summary{display:block;list-style:none;cursor:pointer;width:min(100%,310px);margin:auto;padding:15px 20px;border-radius:28px;background:linear-gradient(135deg,#ffeb3b,#ffb300);color:#3c2700;font-size:16px;font-weight:700;box-shadow:0 0 18px #ffc40055}.sorpresa summary::-webkit-details-marker{display:none}.sorpresa[open] .mensaje{display:block}.sorpresa .mensaje{margin-top:18px}@media(max-width:480px){.sorpresa summary{font-size:15px;padding:14px}}
+</style>
+</head>
+<body>
+<div class="contenedor">
+<h1>🌻 Flores amarillas para ti 🌻</h1>
+<p class="subtitulo">Porque te mereces todas las flores bonitas del mundo 💛</p>
+<div class="jardin">
+<svg viewBox="0 0 390 390" role="img" aria-label="Ramo de cinco flores amarillas">
+<defs>
+ <radialGradient id="petalo"><stop stop-color="#fff59d"/><stop offset=".7" stop-color="#ffd83d"/><stop offset="1" stop-color="#f5a900"/></radialGradient>
+ <radialGradient id="centro"><stop stop-color="#9a6624"/><stop offset="1" stop-color="#4b2a0b"/></radialGradient>
+ <linearGradient id="papel"><stop stop-color="#f8d7a8"/><stop offset="1" stop-color="#b77c52"/></linearGradient>
+ <g id="cabezaFlor">
+  <g fill="url(#petalo)" stroke="#eeb72c" stroke-width=".6">
+   <ellipse cy="-29" rx="13" ry="25"/><ellipse cy="-29" rx="13" ry="25" transform="rotate(45)"/><ellipse cy="-29" rx="13" ry="25" transform="rotate(90)"/><ellipse cy="-29" rx="13" ry="25" transform="rotate(135)"/><ellipse cy="-29" rx="13" ry="25" transform="rotate(180)"/><ellipse cy="-29" rx="13" ry="25" transform="rotate(225)"/><ellipse cy="-29" rx="13" ry="25" transform="rotate(270)"/><ellipse cy="-29" rx="13" ry="25" transform="rotate(315)"/>
+  </g><circle r="21" fill="url(#centro)" stroke="#e6a21a" stroke-width="4"/><g fill="#c18a35" opacity=".7"><circle cx="-7" cy="-5" r="2"/><circle cx="5" cy="-9" r="2"/><circle cx="9" cy="5" r="2"/><circle cx="-4" cy="10" r="2"/></g>
+ </g>
+</defs>
+<!-- Tallos: todos quedan dentro del dibujo, nunca encima de los botones -->
+<g fill="none" stroke="#348d47" stroke-width="7" stroke-linecap="round"><path d="M195 322 Q192 220 195 88"/><path d="M195 322 Q146 230 110 135"/><path d="M195 322 Q239 222 278 135"/><path d="M195 322 Q140 268 143 205"/><path d="M195 322 Q244 264 247 205"/></g>
+<g fill="#46a756"><path d="M176 250 Q125 212 116 240 Q140 263 176 250"/><path d="M213 245 Q266 204 275 232 Q249 257 213 245"/><path d="M161 284 Q113 267 109 291 Q136 308 161 284"/><path d="M231 283 Q279 264 283 289 Q257 306 231 283"/></g>
+<!-- Flores estáticas en SVG: se ven incluso si JavaScript no se ejecuta -->
+<use href="#cabezaFlor" x="195" y="88" class="cabeza"/>
+<use href="#cabezaFlor" x="110" y="135" class="cabeza"/>
+<use href="#cabezaFlor" x="278" y="135" class="cabeza"/>
+<use href="#cabezaFlor" x="143" y="205" class="cabeza"/>
+<use href="#cabezaFlor" x="247" y="205" class="cabeza"/>
+<!-- Envoltura por delante de los tallos -->
+<path d="M100 245 L290 245 L225 375 L165 375 Z" fill="url(#papel)" stroke="#e4b98d" stroke-width="1"/>
+<path d="M100 245 L195 290 L165 375 Z" fill="#f4c997" opacity=".7"/><path d="M290 245 L195 290 L225 375 Z" fill="#b98157" opacity=".35"/>
+<text x="195" y="324" font-size="43" text-anchor="middle">🎀</text>
+</svg>
+</div>
+<audio id="musica" loop preload="metadata"><source src="Rauw Alejandro - Algo Mágico (Video Oficial).mp3" type="audio/mpeg"></audio>
+<button id="botonMusica" type="button" onclick="controlarMusica()">🎵 Reproducir música</button>
+<details class="sorpresa"><summary>💌 Tengo algo para ti</summary>
+<div class="mensaje" id="mensaje"><h2>Para alguien muy especial 💛</h2><p>Hoy quiero regalarte estas flores amarillas, porque hay personas que hacen que nuestros días sean mucho más bonitos.<br><br>Espero que nunca te falten motivos para sonreír, que todos tus sueños se cumplan y que la vida te regale momentos tan hermosos como tú.<br><br>Estas flores son para ti, con mucho cariño.<br><br>🌻 Feliz día de las flores amarillas 🌻</p></div></details>
+</div>
+<script>
+const musica=document.getElementById('musica');
+const botonMusica=document.getElementById('botonMusica');
+async function controlarMusica(){if(musica.paused){try{await musica.play();botonMusica.textContent='⏸️ Pausar música'}catch(error){alert('No se pudo abrir el MP3. Comprueba que esté junto a index.html y que lo hayas enviado también al celular.');console.error(error)}}else{musica.pause();botonMusica.textContent='🎵 Reproducir música'}}
+function mostrarMensaje(){const mensaje=document.getElementById('mensaje');mensaje.classList.toggle('visible');if(mensaje.classList.contains('visible')){mensaje.scrollIntoView({behavior:'smooth',block:'nearest'});for(let i=0;i<25;i++)setTimeout(crearCorazon,i*150)}}
+function crearCorazon(){const corazon=document.createElement('div');corazon.className='corazon';corazon.textContent='💛';corazon.style.left=Math.random()*100+'vw';corazon.style.animationDuration=4+Math.random()*3+'s';document.body.appendChild(corazon);setTimeout(()=>corazon.remove(),7000)}
+for(let i=0;i<45;i++){const e=document.createElement('div');e.className='estrella';e.style.left=Math.random()*100+'vw';e.style.top=Math.random()*100+'vh';e.style.animationDelay=Math.random()*3+'s';document.body.appendChild(e)}
+</script>
+</body>
+</html>
